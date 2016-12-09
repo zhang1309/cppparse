@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dangerFunction>
+  <function id="1">
+    <functionName>
+      func1
+    </functionName>
+    <parameterList>
+      1,2_BigerThan
+    </parameterList>
+  </function>
+</dangerFunction>

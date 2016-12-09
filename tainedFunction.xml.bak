@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<function>
+<sensitiveFunction>
+  <function id="1">
+    <functionName>
+      add
+    </functionName>
+    <parameterList>
+      1_T
+    </parameterList>
+  </function>
+  <function id="2">
+    <functionName>
+      plus
+    </functionName>
+    <parameterList>
+      1-2
+    </parameterList>
+  </function>
+</sensitiveFunction>
+</function>

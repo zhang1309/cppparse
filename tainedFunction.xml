@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tainedFunction>
+  <function id="1">
+    <functionName>
+      scanf
+    </functionName>
+    <parameterList>
+      2-end_F
+    </parameterList>
+  </function>
+</tainedFunction>

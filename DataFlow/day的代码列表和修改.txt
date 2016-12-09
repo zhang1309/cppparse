@@ -1,0 +1,32 @@
+1. DataFlow文件夹下的所有文件
+2. GlobalVariableExpr.g
+3. ExprValueTreeWalker.g
+///// 以上是我的代码列表
+
+4. CFG/CFGStructure.h, CFG/CFGStructure.cpp
+5. CPP_parser.g
+6. CFGParser.g
+7. ASTNodes/SwitchStatementNode.cpp
+8. SymTable/SymRoot.cpp, addSymbolWithScopeResolution方法的定义
+9. SymTable/SymboItem.h
+///// 以上是被我修改过的文件
+代码被我修改的地方均在修改前后加了注释对:  
+// day
+...
+// day end
+
+
+问题集:
+1. switch语句对应的AST, 在ast上获取其所在作用域(ExprValueTreeWalker.g - dataflowpropagation)
+2. CFG上分支和汇合的配对(Path类中calculateCompounds方法)
+3. 函数的声明条目无法找到其定义条目.
+4. 全局类对象, 通过其条目无法找到其定义时的AST.
+5. 一个对象, 如何获得其类型的符号表, 例如A a, 对象a如何获取A的符号表.
+6. 如何判断一个条目是否属于某个符号表
+7. 如何获得一个类的符号表, 如何判断一个条目是否属于这个符号表.
+8. 调用重载函数时, 无法获取正确的函数条目!!!!!!
+9. scopeOverrideTree规则中的ID取不到符号条目???
+
+考虑:
+1. 分支节点处如果能计算出确切的真假值, 可以过滤掉一部分路径. 但要注意分支节点的条件表达式中涉及到的变量是否在某个循环中被修改.
+2. 整型变量值和PA分析用到不同的树遍历器, 考虑在一个树遍历器中调用另一个树遍历器.

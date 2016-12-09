@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tainedFunction>
+  <function id="1">
+    <functionName>
+      add
+    </functionName>
+    <parameterList>
+      1_T
+    </parameterList>
+  </function>
+  <function id="2">
+    <functionName>
+      plus
+    </functionName>
+    <parameterList>
+      1-2
+    </parameterList>
+  </function>
+</tainedFunction>
